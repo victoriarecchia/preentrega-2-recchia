@@ -12,5 +12,5 @@ const ItemCount = ({ counter, addOne, subOne, onAdd }) => {
     </>
   );
 };
-ads
+
 export default ItemCount;

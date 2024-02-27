@@ -24,7 +24,6 @@ export const ItemDetailContainer = () => {
         console.log(infoProducto);
         navigate("/cart")
     }
-
     return (
         <>
             {isLoading ?

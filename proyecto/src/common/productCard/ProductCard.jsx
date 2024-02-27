@@ -13,12 +13,12 @@ export const ProductCard = ({ img, price, title, id }) => {
                 <Typography variant="body2" color="text.secondary" style={{textAlign: "center", fontSize: "18px"}}>{price}</Typography>
             </CardContent>
             <CardActions>
-                {/* <Button size="small">Comprar</Button> */}
                 <Link to ={`/item/${id}`}> 
                 <Button size="small">Más detalles</Button>
                 </Link>
             </CardActions>
         </Card>
+    
     </div>
     </>;
 };
