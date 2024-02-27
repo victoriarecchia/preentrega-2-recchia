@@ -1,0 +1,12 @@
+/*  */
+.navbar-expand-lg .navbar-collapse{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.navbar-nav{
+  font-size: 25px;
+}
+.navbar-brand{
+  font-size: 25px;
+}

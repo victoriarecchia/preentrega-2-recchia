@@ -1,0 +1,23 @@
+/* .imgProduct{    width: 400px;
+    height: 300px;
+} */
+.productCard {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: row; */
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.productContainerCard {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+
+/* .descriptionProduct {
+    font-size: 15px;
+    margin: 20px;
+} */
