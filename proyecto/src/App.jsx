@@ -4,11 +4,11 @@ import { ItemListContainer } from "./pages/itemListContainer/ItemListContainer";
 import { Cart } from "./pages/cart/Cart";
 import { Home } from "./pages/Home/Home.";
 import { ItemDetailContainer } from "./pages/itemDetailContainer/ItemDetailContainer";
-import { Footer } from "./layout/Footer";
 import { Layout } from "./layout/Layout";
+import { CheckoutContainer } from "./pages/checkout/CheckoutContainer";
 
 
-function App() {
+const App = () => {
   return (
     <>
       <BrowserRouter>
@@ -17,8 +17,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/botines" element={<ItemListContainer />} />
             <Route path="/category/:category" element={<ItemListContainer />} />
-            <Route path="/cart" element={<Cart />} />
             <Route path="/item/:id" element={<ItemDetailContainer />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<CheckoutContainer />} />
+            <Route path="*" element={<h1>404 Not Found</h1>} />
           </Route>
         </Routes>
       </BrowserRouter>

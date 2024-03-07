@@ -14,19 +14,10 @@ export const ItemDetail = ({ img, price, title, description, stock, onAdd }) => 
                             {" "}
                             {title}
                         </Typography>
-
-                        {/* <CardActions className="productButton">
-                            <Button size="medium" variant="outlined">Comprar</Button>
-                            <Link to="/cart">
-                                <Button size="medium" variant="outlined">Añadir al carrito</Button>
-                            </Link>
-                        </CardActions> */}
                         <Typography variant="h4" color="text.secondary">
                             {price}
                         </Typography>
                         <ItemCountContainer stock={stock} onAdd = {onAdd}/>
-                        
-                        
                         <Typography color="text.secondary" variant="h6">
                             {description}
                         </Typography>
