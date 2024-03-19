@@ -1,0 +1,50 @@
+.navbar-expand-lg .navbar-collapse {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  font-size: 20px;
+}
+.navbar navbar-expand-lg navbar-light bg-light{
+  display: flex;
+  padding: 10px;
+}
+
+.navbar-nav {
+  font-size: 25px;
+}
+
+/* .carrito{
+  margin-left: -100px;
+} */
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.categories a {
+  /* background-color: rgb(205, 205, 197); */
+  padding: 10px 20px;
+  color: #696173;
+  /* width: 120px; */
+  display: flex;
+  justify-content:space-around;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.categories a:hover {
+  background-color: rgb(169, 169, 161);
+}
+
+.css-1xylxj1-MuiTypography-root-MuiLink-root {
+  text-decoration: none;
+  color: black;}

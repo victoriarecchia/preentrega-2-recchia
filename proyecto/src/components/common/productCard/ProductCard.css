@@ -1,0 +1,22 @@
+
+.productCard {
+    /* display: flex; */
+    justify-content: center;    
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.productListCard {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.productContainerCard{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
