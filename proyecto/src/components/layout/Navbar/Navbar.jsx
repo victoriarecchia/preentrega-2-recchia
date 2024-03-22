@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css"
-// import { Cart } from "../../pages/cart/Cart";
 import { CartWidget } from "../../common/productCard/CartWidget";
 import { menuNavigation } from "../../../router/menuNavigation";
 
 export const Navbar = () => {
-    let user = { rol: "admin" }
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">

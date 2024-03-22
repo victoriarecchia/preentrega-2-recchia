@@ -12,11 +12,6 @@
 .navbar-nav {
   font-size: 25px;
 }
-
-/* .carrito{
-  margin-left: -100px;
-} */
-
 .navbar-brand {
   font-size: 25px;
 }
@@ -29,10 +24,8 @@
 }
 
 .categories a {
-  /* background-color: rgb(205, 205, 197); */
   padding: 10px 20px;
   color: #696173;
-  /* width: 120px; */
   display: flex;
   justify-content:space-around;
   border-radius: 10px;

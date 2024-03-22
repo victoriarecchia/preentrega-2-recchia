@@ -2,9 +2,6 @@
 
 ## PEPES BOTINES
 
-<!-- ![](https://res.cloudinary.com/db2jmqror/image/upload/v1708993061/WhatsApp_Image_2024-02-07_at_12.01.21_1_fwmx0x.jpg )  -->
-
-
 
 ## Para el correcto funcionamiento del proyecto, configurar las siguientes variables:
 - VITE_APIKEY = ...

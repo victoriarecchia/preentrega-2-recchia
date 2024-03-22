@@ -5,7 +5,7 @@ import "./ProductCard.css";
 
 export const ProductCard = ({ img, price, title, id }) => {
     return <>
-        <Box sx={{ display: 'inline-flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
+        <Box sx={{ display: 'inline-flex', flexDirection: 'row', flexWrap: 'wrap'   , justifyContent: 'center'}}>
             <Card className="productCard">
                 <CardMedia className="imgProductCard" component="img"  image={img} />
                 <CardContent>

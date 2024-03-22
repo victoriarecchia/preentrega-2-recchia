@@ -21,7 +21,6 @@ export const CartContainer = () => {
       denyButtonText: `No, volver`
     }).then((result) => {
       if (result.isConfirmed) {
-        // Swal.fire("Sa!", "", "success");
         cleanCart()
       }
     });
@@ -40,18 +39,18 @@ export const CartContainer = () => {
 
           <div className='buttons'>
             <h1>Resumen de compra</h1>
+            <h3>Total a pagar: ${total} </h3>
             <Link to="/checkout">
               <Button size='medium' variant="contained">Terminar compra</Button>
             </Link>
-            <h3>Total a pagar: ${total} </h3>
           </div>
 
         </div>
       ) : (
         <div className='addProducts'>
-        <Link to="/todos">
-          <Button variant="contained">Agregar productos</Button>
-        </Link>
+          <Link to="/botines">
+            <Button variant="contained">Agregar productos</Button>
+          </Link>
         </div>
       )
       }

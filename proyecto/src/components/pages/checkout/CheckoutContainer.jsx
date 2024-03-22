@@ -11,7 +11,6 @@ export const CheckoutContainer = () => {
   const { cart, getTotalPrice, cleanCart } = useContext(CartContext)
   let totalPrice = getTotalPrice()
 
-
   const { handleSubmit, handleChange, errors } = useFormik({
     initialValues: {
       name: "",
@@ -30,7 +29,7 @@ export const CheckoutContainer = () => {
 
       phone: Yup.number()
         .required("Campo requerido")
-        // .positive("s")
+      // .positive("s")
     }),
     validateOnChange: false
   })
@@ -42,8 +41,6 @@ export const CheckoutContainer = () => {
   })
 
   const [orderId, setOrderId] = useState(null)
-
-
 
   const envioFormulario = (event) => {
     // El metodo prevent Default evita que se recargue la pagina cuando enviamos el formulario
@@ -64,10 +61,9 @@ export const CheckoutContainer = () => {
 
       updateDoc(refDoc, { stock: product.stock - product.quantity })
     });
-  
+
     cleanCart()
   }
-
 
   const capturar = (event) => {
     // Usamos los corchetes cuando la propiedad es un string

@@ -1,11 +1,7 @@
 import { createContext, useContext, useState } from "react"
 
-
 export const CartContext = createContext()
 
-// El componente va a llevar el nombre del archivo junto a la palabra provider 
-// Mi componente padre recibe los children por parametro
-// Todas las funciones van a estar en el Cart Context Provider y se pueden disparar en cualquier lugar del programa
 const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")) || [])
 
