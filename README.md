@@ -1,6 +1,6 @@
-# E-commerce
 
-## PEPES BOTINES
+# PEPES BOTINES
+## E-commerce de botines de fútbol
 
 ## Para el correcto funcionamiento del proyecto, configurar las siguientes variables:
 - VITE_APIKEY = ...
