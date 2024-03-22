@@ -11,11 +11,14 @@ export const CartProduct = () => {
     <> 
       {
         cart.map(product=>
-        <div key={product.id} style={{border:"solid 2px black", fontFamily:"initial"}}> 
-          <h2> Nombre: {product.title}</h2>
-          <h2> Precio: {product.price}</h2>
-          <h2> Cantidad: {product.quantity}</h2>
-          <Button size='large' onClick={()=>deleteProduct(product.id)}>Eliminar</Button>
+          <div  className='nameItems'key={product.id} > 
+          <img src={product.img} alt="" style={{width: "130px", height: "130px"}} />
+          <div className='nameItem'>
+          <h4> {product.title}</h4>
+          <h5> ${product.price}</h5>
+          <h5> Unidades: {product.quantity}</h5>
+          </div>
+          <Button size='medium' color='info' onClick={()=>deleteProduct(product.id)}>Eliminar</Button>
         </div>
           )
         }

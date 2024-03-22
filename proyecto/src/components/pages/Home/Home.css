@@ -1,0 +1,13 @@
+.logo{
+  width: 350px;
+  height: 350px;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home h1{
+  font-family:Arial, Helvetica, sans-serif;
+}

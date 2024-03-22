@@ -11,7 +11,7 @@ export const Checkout = ({ envioFormulario, capturar, handleChange, handleSubmit
           orderId ?
             <div>
               <h2> ¡Gracias! Tu numero de compra es: {orderId} </h2>
-              <Link to ="/botines"><Button>Seguir comprando</Button></Link>
+              <Link to ="/botines" className='addProducts'><Button>Seguir comprando</Button></Link>
             </div> : <form onSubmit={envioFormulario} style={
               { display: "flex", flexDirection: "column", width: "50%", gap: "20px" }
             }>

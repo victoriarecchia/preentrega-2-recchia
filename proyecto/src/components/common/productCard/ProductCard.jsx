@@ -1,15 +1,15 @@
 import React from "react";
-import { Card, CardActions, CardContent, CardMedia, Button, Typography } from "@mui/material"
+import { Card, CardActions, CardContent, CardMedia, Button, Typography, Box } from "@mui/material"
 import { Link } from "react-router-dom";
 import "./ProductCard.css";
 
 export const ProductCard = ({ img, price, title, id }) => {
     return <>
-        <div className="productListCard" >
-            <Card className="productCard"sx={{ maxWidth: 300, display: "flex", flexDirection: "row" }}>
-                <CardMedia className="imgProductCard" component="img" height="300" image={img} />
+        <Box sx={{ display: 'inline-flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <Card className="productCard">
+                <CardMedia className="imgProductCard" component="img"  image={img} />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div" style={{ fontSize: "20px", textAlign: "center" }}> {title}</Typography>
+                    <Typography gutterBottom variant="h5" component="div" style={{textAlign: "center" }}> {title}</Typography>
                     <Typography variant="body2" color="text.secondary" style={{ textAlign: "center", fontSize: "18px" }}>${price}</Typography>
                 </CardContent>
                 <CardActions>
@@ -18,6 +18,6 @@ export const ProductCard = ({ img, price, title, id }) => {
                     </Link>
                 </CardActions>
             </Card>
-        </div>
+        </Box>
     </>;
 };
