@@ -1,7 +1,7 @@
 export let products = [
     {
         id: "1",
-        title: "Nike Mercurial Superfly 8 Elite FG - Player Edition",
+        title: "Nike Mercurial Superfly 8 Elite FG",
         price: 150000,
         description:
             "Los botines Nike Mercurial Superfly 8 Elite FG presenta una nueva apariencia con componentes especializados que te permiten jugar más rápido de principio a fin. Un cuello elástico brinda soporte adicional y la innovadora placa brinda capacidad de respuesta instantánea para cortes más rápidos a altas velocidades.",
@@ -11,7 +11,7 @@ export let products = [
     },
     {
         id: "2",
-        title: "Nike Zoom Mercurial Vapor 15 Elite FG - Special Edition",
+        title: "Nike Zoom Mercurial Vapor 15 Elite FG",
         price: 150000,
         description:
             "El actual Air Zoom Mercurial en el campo es un retroceso al look que se hizo famoso en los pies de Ronaldo allá por 2002.",
@@ -41,7 +41,7 @@ export let products = [
     },
     {
         id: "5",
-        title: "Nike Zoom Mercurial Superfly 9 Elite SG-Pro - Player Edition",
+        title: "Nike Zoom Mercurial Superfly 9 Elite SG-Pro",
         price: 165000,
         description:
             "Incliná instantáneamente el campo con el diseño en negrita del Superfly 9 Elite SG-Pro. Agregamos una unidad Zoom Air, diseñada específicamente para fútbol, ​​y una textura con agarre en la parte superior para un toque excepcional, para que puedas dominar en los últimos minutos de un partido, cuando más importa. Sentí la velocidad explosiva mientras corrés por el campo, realizando jugadas críticas con velocidad y ritmo. La velocidad está en el aire. Esta versión tiene Traccion Anti-Clog en la suela, lo que ayuda a evitar que el barro se pegue.",
@@ -80,7 +80,7 @@ export let products = [
     {
         id: "9",
         title: "Adidas X CRAZYFAST.1 FG",
-        price: "$$55000",
+        price: 155000,
         description: "Modelo 1.1",
         img: "https://res.cloudinary.com/db2jmqror/image/upload/v1708457554/X_CRAZYFAST.1_FG_Blanco_HQ4516_HM1_mnrdlg.jpg",
         stock: 5,

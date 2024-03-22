@@ -1,5 +1,5 @@
-import { createContext, useState } from "react"
-import { products } from "../productsMock"
+import { createContext, useContext, useState } from "react"
+
 
 export const CartContext = createContext()
 
@@ -7,7 +7,8 @@ export const CartContext = createContext()
 // Mi componente padre recibe los children por parametro
 // Todas las funciones van a estar en el Cart Context Provider y se pueden disparar en cualquier lugar del programa
 const CartContextProvider = ({ children }) => {
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")) || [])
+
 
   const addToCart = (product) => {
     let existe = isInCart(product.id)
@@ -24,14 +25,17 @@ const CartContextProvider = ({ children }) => {
       });
 
       setCart(newArray)
+      localStorage.setItem("cart", JSON.stringify(newArray))
       // Creo un arreglo con los productos agregados previamente al carrito, añadiendo el nuevo producto.
     } else {
       setCart([...cart, product])
+      localStorage.setItem("cart", JSON.stringify([...cart, product]))
     }
   }
 
   const cleanCart = () => {
     setCart([])
+    localStorage.removeItem("cart")
   }
 
   const isInCart = (id) => {
@@ -42,13 +46,14 @@ const CartContextProvider = ({ children }) => {
   const deleteProduct = (id) => {
     let newArray = cart.filter((elemento) => elemento.id !== id);
     setCart(newArray)
+    localStorage.setItem("cart", JSON.stringify(newArray))
   } 
 
   const getTotalItems = () => {
     let total = cart.reduce((acc, elemento) => {
       return acc + elemento.quantity;
     }, 0)
-    return total;
+    return total; 
   }
 
   const getTotalPrice = () => {

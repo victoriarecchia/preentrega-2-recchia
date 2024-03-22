@@ -1,26 +1,30 @@
 import { useContext, useEffect, useState } from "react"
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { ItemDetail } from "./ItemDetail"
-import { getProduct } from "../../../productsMock"
 import { CartContext } from "../../../context/CartContext"
 import "./ItemDetail.css"
+import { db } from "../../../firebaseConfig"
+import { collection, doc, getDoc, updateDoc } from "firebase/firestore"
+import { PropagateLoader } from "react-spinners"
 
 export const ItemDetailContainer = () => {
     const { id } = useParams()
+
     const [item, setItem] = useState(null)
     const [isLoading, setIsLoading] = useState(true)
 
     const { addToCart, getTotalQuantityById } = useContext(CartContext);
 
-    let initial = getTotalQuantityById(id)
-    console.log(initial);
 
+    let initial = getTotalQuantityById(id)
+    
     useEffect(() => {
-        getProduct(id)
-            .then((resp) => {
-                setItem(resp)
-                setIsLoading(false)
-            })
+        let productsCollection = collection(db, "products")
+        let refDoc = doc(productsCollection, id)
+        getDoc(refDoc).then(res => {
+            setItem({...res.data(), id: res.id})
+        }).finally(()=> setIsLoading(false))
+
     }, [id])
 
     const onAdd = (cantidad) => {
@@ -31,14 +35,16 @@ export const ItemDetailContainer = () => {
         }
         addToCart(infoProducto)
     }
-
+    
+    if (isLoading) {
+        return <div className="loadContainer">
+            <h3>Cargando botines</h3>
+            <PropagateLoader color="#020f22" size="16px" margin="2" />
+        </div>
+    }
     return (
         <>
-            {isLoading ? <div className="loadContainer">
-                <h2 className="loadTitle"> Cargando producto...{" "}
-                    <img src="https://res.cloudinary.com/db2jmqror/image/upload/v1708993061/WhatsApp_Image_2024-02-07_at_12.01.21_1_fwmx0x.jpg" alt="" className="logo"
-                    />{" "}
-                </h2> </div> : (<ItemDetail onAdd={onAdd} {...item} initial = {initial}/>)}
+                (<ItemDetail onAdd={onAdd} {...item} initial = {initial}/>)
         </>
     )
 }

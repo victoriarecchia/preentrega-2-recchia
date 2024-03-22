@@ -1,8 +1,16 @@
-# React + Vite
+# E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## PEPES BOTINES
 
-Currently, two official plugins are available:
+<!-- ![](https://res.cloudinary.com/db2jmqror/image/upload/v1708993061/WhatsApp_Image_2024-02-07_at_12.01.21_1_fwmx0x.jpg )  -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+## Para el correcto funcionamiento del proyecto, configurar las siguientes variables:
+- VITE_APIKEY = ...
+- VITE_AUTHDOMAIN = ...
+- VITE_ID = ...
+- VITE_STORAGE_BUCKEY = ...
+- VITE_MESSAGING_SENDER_ID = ...
+- VITE_APP_ID = ...
+

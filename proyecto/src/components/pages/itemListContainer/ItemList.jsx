@@ -1,3 +1,4 @@
+import { AgregarDocs } from "../../../AgregarDocs"
 import { ProductCard } from "../../common/productCard/ProductCard"
 
 export const ItemList = ({ products }) => {

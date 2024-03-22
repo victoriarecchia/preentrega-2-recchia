@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css"
 // import { Cart } from "../../pages/cart/Cart";
 import { CartWidget } from "../../common/productCard/CartWidget";
+import { menuNavigation } from "../../../router/menuNavigation";
 
 export const Navbar = () => {
     let user = { rol: "admin" }
@@ -13,13 +14,12 @@ export const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <Link to="/" className="navbar-brand">PEPES</Link>
-                    {/* <div className="navbar-nav"> */}
                     <div className="categories">
-                        <Link to="/botines">Todos</Link>
-                        <Link to="/category/nike">Nike</Link>
-                        <Link to="/category/adidas">Adidas</Link>
-                        <Link to="/category/puma">Puma</Link>
-                        {/* </div> */}
+                    {
+                        menuNavigation.map(({path, text, id})=>(
+                            <Link key= {id} to = {path}>{text}</Link>
+                        ))
+                    }
                     </div>
                     <CartWidget />
                 </div>

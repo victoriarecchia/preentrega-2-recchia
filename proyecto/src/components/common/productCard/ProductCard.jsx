@@ -6,7 +6,7 @@ import "./ProductCard.css";
 export const ProductCard = ({ img, price, title, id }) => {
     return <>
         <div className="productListCard" >
-            <Card className="productCard"sx={{ maxWidth: 320, display: "flex", flexDirection: "row" }}>
+            <Card className="productCard"sx={{ maxWidth: 300, display: "flex", flexDirection: "row" }}>
                 <CardMedia className="imgProductCard" component="img" height="300" image={img} />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div" style={{ fontSize: "20px", textAlign: "center" }}> {title}</Typography>

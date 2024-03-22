@@ -16,7 +16,6 @@ export const FetchingAxios = () => {
 
     axiosInstance.post("/users", users)
   }, [])
-  console.log(users); 
 
 
   return (
