@@ -2,5 +2,38 @@
   "rewrites": [{
     "source": "/(.*)",
     "destination": "/"  
-  }]
+  }],
+  "routes":[
+    
+      {
+        "src": "/", 
+        "dst": "/"
+      },
+      {
+        
+        "src": "/botines", 
+        "dst": "/"
+      },
+      {
+    
+        "src": "/category/:category", 
+        "dst": "/"
+      },
+      {
+    
+        "src": "/item/:id", 
+        "dst": "/"
+      },
+      {
+      
+        "src": "/cart", 
+        "dst": "/"
+      },
+      {
+    
+        "src": "/checkout", 
+        "dst": "/"
+      }
+    
+  ]
 }
