@@ -2,7 +2,7 @@ import { Box, Button, TextField } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const Checkout = ({ envioFormulario, capturar, errors, orderId }) => {
+export const Checkout = ({ envioFormulario, handleSubmit, capturar, errors, orderId }) => {
   return (
     <>
       <div style={{ padding: "40px", display: "flex", justifyContent: "center" }}>

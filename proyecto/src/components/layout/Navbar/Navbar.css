@@ -41,3 +41,8 @@
 .css-1xylxj1-MuiTypography-root-MuiLink-root {
   text-decoration: none;
   color: black;}
+
+  .collapse navbar-collapse{
+    display: flex;
+    justify-content: space-between;
+  }

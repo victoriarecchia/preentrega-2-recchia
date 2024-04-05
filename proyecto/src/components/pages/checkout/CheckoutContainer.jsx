@@ -18,6 +18,7 @@ export const CheckoutContainer = () => {
       phone: "",
     },
     onSubmit: () => {
+      envioFormulario()
     },
     validationSchema: Yup.object({
       name: Yup.string()
@@ -29,7 +30,6 @@ export const CheckoutContainer = () => {
 
       phone: Yup.number()
         .required("Campo requerido")
-      // .positive("s")
     }),
     validateOnChange: false
   })
