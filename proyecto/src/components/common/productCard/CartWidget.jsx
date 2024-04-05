@@ -13,7 +13,7 @@ export const CartWidget = () => {
   <>
   <Link to = "/cart" className="h-25">
         <Badge badgeContent={total} color="cyan">
-        <BiCart size={32}color="black"/>
+        <BiCart size={32} color="black"/>
         </Badge>  
   </Link>
   </>  

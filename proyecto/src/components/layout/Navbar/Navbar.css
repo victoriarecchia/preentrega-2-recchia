@@ -1,29 +1,35 @@
 .navbar-expand-lg .navbar-collapse {
-  display: flex;
-  justify-content: space-around;
-  margin: 5px;
-  font-size: 20px;
+  /* display: flex;
+  justify-content: space-around; */
+  margin: 8px;
+  font-size: 25px;
 }
-.navbar navbar-expand-lg navbar-light bg-light{
+/* .navbar navbar-expand-lg navbar-light bg-light{
   display: flex;
   padding: 10px;
 }
 
 .navbar-nav {
   font-size: 25px;
-}
-.navbar-brand {
+} */
+/* .navbar-brand {
   font-size: 25px;
-}
-
-.categories {
+} */
+/* .navbar-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 
-.categories a {
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
+/* .categories a {
   padding: 10px 20px;
   color: #696173;
   display: flex;
@@ -32,11 +38,11 @@
   align-items: center;
   text-align: center;
   text-decoration: none;
-}
+} */
 
-.categories a:hover {
+/* .categories a:hover {
   background-color: rgb(169, 169, 161);
-}
+} */
 
 .css-1xylxj1-MuiTypography-root-MuiLink-root {
   text-decoration: none;
@@ -46,3 +52,12 @@
     display: flex;
     justify-content: space-between;
   }
+
+    @media (max-width: 768px){
+      .navbar-expand-lg .navbar-collapse {
+        /* display: flex;
+        justify-content: space-around; */
+        margin: 8px;
+        font-size: 15px;
+      }
+    }

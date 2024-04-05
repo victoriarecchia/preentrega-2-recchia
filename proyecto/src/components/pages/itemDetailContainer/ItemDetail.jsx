@@ -10,11 +10,11 @@ export const ItemDetail = ({ img, price, title, description, stock, onAdd, initi
                 <Card  sx={{ maxWidth: 500 }}>
                     <CardMedia className="imgProduct" component="img" image={img} />
                     <CardContent className="productDesc">
-                        <Typography gutterBottom variant="h4">
+                        <Typography className="productTitle" gutterBottom variant="h5">
                             {" "}
                             {title}
                         </Typography>
-                        <Typography variant="h4" color="text.secondary">$
+                        <Typography variant="h5" className="productPrice" color="text.secondary">$
                             {price}
                         </Typography>
                         <ItemCountContainer
@@ -24,7 +24,7 @@ export const ItemDetail = ({ img, price, title, description, stock, onAdd, initi
                         {
                             initial && <h3>Ya tienes {initial} en el carrito</h3>
                         }
-                        <Typography color="text.secondary" variant="h6">
+                        <Typography color="text.secondary" >
                             {description}
                         </Typography>
 

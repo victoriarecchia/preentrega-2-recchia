@@ -9,8 +9,8 @@ export const ProductCard = ({ img, price, title, id }) => {
             <Card className="productCard">
                 <CardMedia className="imgProductCard" component="img"  image={img} />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div" style={{textAlign: "center" }}> {title}</Typography>
-                    <Typography variant="body2" color="text.secondary" style={{ textAlign: "center", fontSize: "18px" }}>${price}</Typography>
+                    <Typography  component="div" className="productTitle"style={{textAlign: "center" }}> {title}</Typography>
+                    <Typography  className="productPrice" color="text.secondary" >${price}</Typography>
                 </CardContent>
                 <CardActions>
                     <Link to={`/item/${id}`}>

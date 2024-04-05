@@ -1,7 +1,20 @@
-.buttonContainer{
-  margin: 20px;
+.buttonContainer {
+  margin: 30px;
   display: flex;
   gap: 20px;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .buttonContainer {
+    margin: 20px;
+  }
+
+  .buttonContainer Button {
+    font-size: 12px;
+    align-items: center;
+
+  }
 }

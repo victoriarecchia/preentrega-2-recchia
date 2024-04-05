@@ -6,7 +6,7 @@
     align-items: center;
     margin: 30px;
     /* flex-wrap: wrap; */
-    width: 380px;
+    width: 300px;
 }
 /* .productListCard {
     display: flex; 
@@ -21,4 +21,23 @@
     display: flex;
     justify-content:center;
     align-items: center;
+}
+.counter{
+    margin: 0 10px;
+}
+
+@media (max-width: 768px){
+    .productCard {
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        margin: 30px;
+        width: 300px;
+    }
+    .productTitle{
+        font-size: 15px;
+    }
+    .productPrice{
+        font-size: 10px;
+    }
 }
